@@ -1,1 +1,5 @@
-<center><h1 class="mt-4">Welcome to Task-Management</h1></center>
+<center><h1 class="mt-4">Welcome to Task Management</h1></center>
+<% if user_signed_in? %>
+  <a href="/tasks/new">New Task</a><br />
+  <a href="/tasks">View Tasks</a>
+<% end %>
